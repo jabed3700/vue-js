@@ -1,13 +1,16 @@
 var app = Vue.createApp({
     data(){
         return {
-            name:""
+            AboutMe:{
+                name:"tamim khan",
+                website:"tamim.me",
+                experience:10,
+            },
+            skills:['html','css','js','bootstrap'],
         }
     },
     methods:{
-        handleKeyMethod(e){
-            this.name = e.target.value
-        }
+        
     }
 })
 

@@ -17,10 +17,15 @@
 
     <div id="app">
         <div class="" style="margin-top: 20px;">
-            <input type="text" @keydown.enter="handleKeyMethod">
+            <input type="text" v-model="mobile" placeholder="Enter 11 digit number">
         </div>
 
-        <h4>Welcome to {{name}}</h4>
+        <div class="" style="margin-top: 20px;">
+            <input type="text" v-model="name.firstName" placeholder="Enter your first name">
+            <span style="margin-right:10px"></span>
+            <input type="text" v-model="name.lastName" placeholder="Enter your last name">
+        </div>
+       
 
     </div>
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to vue js tutorials</h1>
+    </header>
+
+    <div id="app">
+        <h3>Skills</h3>
+        <input type="text" v-model="newSkill">
+        <button @click="addSkill()">Add</button>
+        <ul><li v-for="(skill,id) in skills" :key="skill.name" @click="removeItem(id)">{{id+1}}: {{skill}}</li></ul>
+
+
+
+        <input type="text" v-model="newFriend.name">
+        <button @click="addFriend()">Add</button>
+        <ul>
+            <li v-for="(friend,id) in friends" @click="removeFriend(id)">
+                <p>{{friend.name}}, experience:{{friend.experience}}</p>
+                
+                <input type="text" placeholder="remark" @click.stop>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

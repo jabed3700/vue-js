@@ -1,0 +1,17 @@
+header{
+    background-color: #42b983;
+    padding: 40px ;
+    color: white;
+   
+}
+header h1{
+    margin:auto;
+    text-align: center;
+}
+button{
+    padding:8px 20px;
+    color: white;
+    background: #08f;
+    border: none;
+    border-radius: 8px;
+}
